@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/lib/nlohmann_json",
+                "C:\\Program Files (x86)\\googletest-distribution\\include",
+                "C:\\Program Files (x86)\\googletest-distribution\\include\\gmock",
+                "C:\\Program Files (x86)\\googletest-distribution\\include\\gtest",
+                "C:\\Program Files (x86)\\googletest-distribution\\lib;"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
