@@ -1,32 +1,62 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# Игнорировать папки и файлы, которые не должны быть под контролем версий
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
 *.lib
-
-# Executables
+*.so
+*.dll
+*.dylib
 *.exe
 *.out
-*.app
+*.log
+
+# Игнорировать временные файлы и папки
+*.swp
+*.swo
+*.tmp
+*.bak
+*.backup
+*.DS_Store
+*.idea/
+.vscode/
+*.iml
+
+# Игнорировать файлы сборки CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Игнорировать папку build, куда будут собираться результаты сборки
+build/
+
+# Игнорировать все файлы в папке include, если папка не должна быть под контролем версий
+# включить все файлы и папки, упомянутые ниже
+# include/*
+!include/*
+
+# Игнорировать все файлы в папке resources, если папка не должна быть под контролем версий
+# включить все файлы и папки, упомянутые ниже
+# resources/*
+!resources/*
+
+# Игнорировать все файлы в папке src, если папка не должна быть под контролем версий
+# включить все файлы и папки, упомянутые ниже
+# src/*
+!src/*
+
+# Игнорировать все файлы в папке tests, если папка не должна быть под контролем версий
+# включить все файлы и папки, упомянутые ниже
+# tests/*
+!tests/*
+
+# Игнорировать дополнительные папки и файлы
+# Например, если есть другие папки или файлы, которые нужно исключить
+# *.env
+# .vscode/
+
+# Включить следующие файлы и папки в корне проекта
+!CMakeLists.txt
+!config.json
+!requests.json
+
